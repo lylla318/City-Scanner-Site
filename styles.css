@@ -48,6 +48,7 @@ hr {
     -webkit-margin-end: auto;
     border-style: inset;
     border-width: 1px;
+    width:150px;
 }
 
 ul {
@@ -62,17 +63,6 @@ ul {
 }
 
 .header hr {
-    /*position: absolute;
-    z-index: 1;
-    width: 75%;
-    margin-left:20%;
-    border: none;
-    background: #AAA;
-    height:3px;
-    top: -6px;
-    left: 0;*/
-
-
 
     position: absolute;
     z-index: 1;
@@ -93,10 +83,15 @@ ul {
     background: white;
 }
 
+.senseable_logo {
+	width: 212px; 
+	height: 14px;
+}
+
 .mit_area {
 	position: absolute;
     right: 0;
-    top: -6px;
+    top: -10px;
     z-index: 2;
     padding-left: 20px;
     background: white;
@@ -127,7 +122,6 @@ ul {
 	background:  #FE5F1A;
 	border:none;
 	height:3px;
-	width:20%;
 	float:left;
 }
 
@@ -144,19 +138,25 @@ ul {
 	font-family: MarkPro;
 	font-size:18px;
 	width: 100%;
+	margin-bottom: 290px;
 }
 
 .article_body {
 	width:100%;
 	margin-top:26%;
 	background: #F1F2F4;
+	margin-bottom:0%;
+	height:100%;
 }
 
 
 .main_img {
-	margin-left:9%;
+	/*margin-left:9%;
 	margin-right:9%;
-	max-width: 1000px;
+	max-width: 1000px;*/
+	display: table;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .description_boxes {
@@ -171,25 +171,34 @@ ul {
 .description_box {
 	height: auto;
     margin: 0 auto;
-    width: 35%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 30%;
+    /*padding-left: 2%;
+    padding-right: 2%;*/
     margin-right: 0.25%;
     margin-left: 0.25%;
     font-family:MarkPro;
+    margin-top:20px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
 }
 
 .hr_box {
 	height: auto;
     margin: 0 auto;
-    width: 35%;
-    padding: 2%;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
     margin-right: 0.25%;
     margin-left: 0.25%;
+    margin-top: 20px;
 }
 
 .box_lt {
-	font-size:17px;
+	font-size:16px;
 }
 
 .box_rt {
@@ -200,7 +209,6 @@ ul {
 	background: #FE5F1A;
 	border: none;
 	height: 3px;
-	width:40%;
 	float:left;
 }
 
@@ -208,8 +216,8 @@ ul {
 	background: #4B75FD;
 	border: none;
 	height: 3px;
-	width:40%;
 	float:left;
+	margin-bottom: 25px;
 }
 
 .app_img {
@@ -225,7 +233,6 @@ ul {
 }
 
 .launch_btn {
-	position: relative;
     width:200px;
     height:auto;
     padding:1%;
@@ -234,11 +241,9 @@ ul {
     display:table;
     margin: 0 auto;
     text-align: center;
-    margin-top:10%;
+    margin-top:120px;
     font-weight:bold;
     cursor:pointer;
-
-    /* Rectangle 3: */
 	background: #FFFFFF;
 	box-shadow: 0 0 9px 2px rgba(0,0,0,0.40);
 	border-radius: 100px;
@@ -259,28 +264,33 @@ ul {
 }
 
 .lower_boxes p {
-	font-size: 14px;
+	font-size: 12px;
+	margin-bottom:15px;
+}
+
+.press_box p {
+	color:#9A9A9A;
 }
 
 .lower_box {
-	padding:2%;
-	padding-left:3%;
 	height: auto;
     margin: 0 auto;
-    width: 35%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 30%;
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom:2%;
     font-family:MarkPro;
     background-color: #FFFFFF;
     font-size: 14px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
 }
 
 .lower_box hr {
 	float:left;
-	width: 40%;
 	margin-top:10%;
 	margin-bottom:10%;
 }
@@ -290,19 +300,19 @@ ul {
 }
 
 .footer_box {
-	padding:2%;
-	padding-left:3%;
 	height: auto;
     margin: 0 auto;
-    width: 35%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 30%;
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom:2%;
     font-family:MarkPro;
     margin-top:2%;
     font-size: 14px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
 .thermal_imaging h2{
@@ -369,23 +379,21 @@ ul {
 	border:none;
 	height:3px;
 	background: #9A9A9A;
-	width:40%;
 	float:left;
 }
 
 .footer_box h3 {
 	font-family: MarkPro;
-	font-weight: bold;
 	font-size: 18px;
 	margin-bottom: 5%;
 }
 
 .footer_box li {
-	font-size:14px;
+	font-size:12px;
 }
 
 .footer_box ul {
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 	margin-top:5%;
 }
 
@@ -393,15 +401,145 @@ ul {
 	margin-top:15%;
 }
 
+@media only screen and (max-width: 700px) {
 
+    .title_section {
+    	margin-bottom: 32%;
+    }
 
-/*.logo_area:after {
-	background-color: black;
-	content: '';
-	display:inline-block;
-	height: 1px;
-	position: relative;
-	width:60%;
-	vertical-align: middle;
-}*/
+    /*.main_img {
+		margin-left:0%;
+		margin-right:0%;
+	}*/
+
+}
+
+@media only screen and (max-width: 332px) {
+
+    .main_title {
+    	line-height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	.senseable_logo {
+		width:140px;
+	}
+
+	.mit_logo {
+		width:30px;
+	}
+
+	.header {
+		margin: 25px 25px 0 25px;
+	}
+
+	.description_boxes {
+		margin-left:4.5%;
+	}
+
+	.description_box {
+		width:90%;
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+
+	.description_box.box_lt {
+		margin-bottom:10%;
+		font-size: 15px;
+	}
+
+	.description_box.box_rt {
+		font-size: 13px;
+	}
+
+	.hr_box {
+		width:100%;
+	}
+
+	.app_img {
+		height:200px;
+		margin-bottom: 50px;
+    	margin-top: 40px;
+	}
+
+	.launch_btn {
+		margin-top: 85px;
+		padding:3%;
+	}
+
+	.lower_boxes {
+		margin-left:8%;
+	}
+
+	.lower_box {
+		width:75%;
+		margin-bottom: 10%;
+		padding: 20px 20px 10px 20px;
+
+	}
+
+	.lower_box h2 {
+		font-size: 24px;
+	}
+
+	.lower_box p {
+		font-size: 13px;
+	}
+	
+	.footer_box {
+		width:75%;
+		padding: 20px 20px 20px 20px;
+	}
+
+	.footer_box h2 {
+		font-size: 24px;
+	}
+
+	.footer_box h3 {
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	.footer_box a, .footer_box p, .footer_box li {
+		font-size: 12px;
+	}
+
+	.main_title {
+		font-size: 50px;
+		margin-bottom:20px;
+	}
+
+	.divider-tp {
+		margin-bottom: 20px;
+	}
+
+	.sub_title {
+		font-size: 16px;
+		margin-bottom: 130px;
+	}
+
+	.divider-tp hr, .divider-bt hr {
+		width:150px;
+	}
+
+	.title_section {
+		margin-left: 8%;
+	}
+
+	.icon_svg {
+		width:65px;
+	}
+
+	div.hr_box.hr_box_lt {
+		margin-top:45px;
+	}
+
+	.team_box {
+		margin-bottom: 80px;
+	}
+
+}
 
